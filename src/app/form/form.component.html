@@ -12,7 +12,7 @@
         </div>
         <div class="form-group">
             <label>Correo electrónico</label>
-            <input id="email" type="text" class="form-control" [(ngModel)]="registro.correo">
+            <input id="email" type="email" class="form-control" [(ngModel)]="registro.correo" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
         </div>
         <div class="form-group">
             <label>Fecha de nacimiento</label>
